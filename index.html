@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Quiz App</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+  <body class="light-theme">
+    <main class="container">
+      <header class="header">
+        <div class="quiz-category-container">
+          <div class="quiz-category">
+            <img class="quiz-icon option-icon" src="" alt="quiz category" />
+          </div>
+          <div class="quiz-category-text"></div>
+        </div>
+        <div class="theme-switch-wrapper">
+          <span class="icon-sun"
+            ><img
+              class="icon-sun-image"
+              src="assets/images/icon-sun-dark.svg"
+              alt="icon sun"
+          /></span>
+          <input type="checkbox" class="theme-switch" id="theme-toggle" />
+          <span class="icon-moon"
+            ><img
+              class="icon-moon-image"
+              src="assets/images/icon-moon-dark.svg"
+              alt="icon moon"
+          /></span>
+        </div>
+      </header>
+      <section class="start-screen" id="start">
+        <article class="welcome-text">
+          <h1 class="welcome-title">
+            Welcome to the
+            <span class="welcome-title__bold">Frontend Quiz!</span>
+          </h1>
+          <p class="welcome-description">Pick a subject to get started.</p>
+        </article>
+        <aside class="quiz-options">
+          <div class="option" data-option="HTML">
+            <span class="option-icon html-bg"
+              ><img src="assets/images/icon-html.svg" alt="HTML" /></span
+            ><span class="option-title">HTML</span>
+          </div>
+          <div class="option" data-option="CSS">
+            <span class="option-icon css-bg">
+              <img src="assets/images/icon-css.svg" alt="CSS" />
+            </span>
+            <span class="option-title">CSS</span>
+          </div>
+          <div class="option" data-option="JavaScript">
+            <span class="option-icon javascript-bg"
+              ><img src="assets/images/icon-js.svg" alt="JavaScript" /></span
+            ><span class="option-title">Javascript</span>
+          </div>
+          <div class="option" data-option="Accessibility">
+            <span class="option-icon accessibility-bg">
+              <img
+                src="assets/images/icon-accessibility.svg"
+                alt="Accessibility" /></span
+            ><span class="option-title">Accessibility</span>
+          </div>
+        </aside>
+      </section>
+      <section class="game-screen">
+        <aside class="question-section">
+          <div class="question-number">
+            Question <span class="current-question"></span> of 10
+          </div>
+          <div class="question-text"></div>
+          <div class="progress-bar-section">
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+          </div>
+        </aside>
+        <article class="answers-section">
+          <div class="answer-option">
+            <div class="answer-letter-text-container">
+              <button class="answer-letter" data-option="A">A</button>
+              <span class="answer-text"></span>
+            </div>
+            <div class="answer-icon"><img src="" alt="" /></div>
+          </div>
+          <div class="answer-option">
+            <div class="answer-letter-text-container">
+              <button class="answer-letter" data-option="B">B</button
+              ><span class="answer-text"></span>
+            </div>
+            <div class="answer-icon"><img src="" alt="" /></div>
+          </div>
+          <div class="answer-option">
+            <div class="answer-letter-text-container">
+              <button class="answer-letter" data-option="C">C</button>
+              <span class="answer-text"></span>
+            </div>
+            <div class="answer-icon"><img src="" alt="" /></div>
+          </div>
+          <div class="answer-option">
+            <div class="answer-letter-text-container">
+              <button class="answer-letter" data-option="D">D</button>
+              <span class="answer-text"></span>
+            </div>
+            <div class="answer-icon"><img src="" alt="" /></div>
+          </div>
+          <div class="btn-container submit-answer">
+            <div class="btn">
+              <span class="btn-text">Submit Answer</span>
+            </div>
+            <div class="error-message">
+              <img src="assets/images/icon-error.svg" alt="error icon" /><span
+                class="error-message__text"
+              >
+                Please select an answer
+              </span>
+            </div>
+          </div>
+          <div class="btn-container next-question">
+            <div class="btn">
+              <span class="btn-text">Next Question</span>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="end-screen">
+        <div class="final-message">
+          <h2 class="end-screen__title">
+            Quiz completed
+            <span class="end-screen-title__bold">You scored...</span>
+          </h2>
+          <div class="end-section-container">
+            <article class="score-section">
+              <div class="score-section-box">
+                <h3 class="selected-quiz-title">
+                  <img
+                    class="quiz-icon option-icon accessibility-bg"
+                    src=""
+                    alt=""
+                  /><span class="selected-quiz-text"></span>
+                </h3>
+                <div class="score-result">
+                  <div class="player-score"></div>
+                  <div class="total-question">out of 10</div>
+                </div>
+              </div>
+            </article>
+            <div class="btn-container restart-btn">
+              <div class="replay-btn">
+                <span class="btn-text">Play Again</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
