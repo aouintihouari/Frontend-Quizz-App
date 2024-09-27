@@ -1,26 +1,25 @@
 @font-face {
   font-family: "Rubik";
-  src: url("/assets/fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+  src: url("assets/fonts/Rubik-VariableFont_wght.ttf") format("truetype");
   font-style: normal;
 }
 
 @font-face {
   font-family: "Rubik";
-  src: url("/assets/fonts/Rubik-Italic-VariableFont_wght.ttf")
-    format("truetype");
+  src: url("assets/fonts/Rubik-Italic-VariableFont_wght.ttf") format("truetype");
   font-style: italic;
 }
 
 :root {
-  --light-text: #313e51; /* light theme heading/option/icon text color */
+  --light-text: #313e51;
 
-  --dark-bg: #3b4d66; /* dark theme option background color */
-  --light-bg: #f4f6fa; /* both themes button text color/ dark theme option text */
+  --dark-bg: #3b4d66;
+  --light-bg: #f4f6fa;
 
-  --light-selection-bg: #ffffff; /* both themes button option background */
-  --dark-selection-bg-and-light-small-text: #626c7f; /* light theme small text/both themes button option color */
+  --light-selection-bg: #ffffff;
+  --dark-selection-bg-and-light-small-text: #626c7f;
 
-  --dark-small-text: #abc1e1; /* dark theme small text color */
+  --dark-small-text: #abc1e1;
 
   --purple: #a729f5;
   --green: #26d782;
